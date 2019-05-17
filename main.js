@@ -14,7 +14,7 @@ var orangeIcon = L.icon({
     shadowUrl: '',
 
     iconSize:     [28, 34],  // size of the icon
-    iconAnchor:   [12, 30],
+    iconAnchor:   [12, 30],  // where the icon is anchored on the map
     popupAnchor:  [0, -28]
 });
 var redIcon = L.icon({
@@ -22,7 +22,7 @@ var redIcon = L.icon({
   shadowUrl: '',
 
   iconSize:     [28, 34],  // size of the icon
-  iconAnchor:   [12, 30],
+  iconAnchor:   [12, 30],  // where the icon is anchored on the map
   popupAnchor:  [0, -28]
 });
 var blueIcon = L.icon({
@@ -30,7 +30,7 @@ var blueIcon = L.icon({
   shadowUrl: '',
 
   iconSize:     [28, 34],  // size of the icon
-  iconAnchor:   [12, 30],
+  iconAnchor:   [12, 30],  // where the icon is anchored on the map
   popupAnchor:  [0, -28]
 });
 var purpleIcon = L.icon({
@@ -38,7 +38,7 @@ var purpleIcon = L.icon({
   shadowUrl: '',
 
   iconSize:     [28, 34],  // size of the icon
-  iconAnchor:   [12, 30],
+  iconAnchor:   [12, 30],  // where the icon is anchored on the map
   popupAnchor:  [0, -28]
 });
 var lightBlueIcon = L.icon({
@@ -46,7 +46,7 @@ var lightBlueIcon = L.icon({
   shadowUrl: '',
 
   iconSize:     [28, 34],  // size of the icon
-  iconAnchor:   [12, 30],
+  iconAnchor:   [12, 30],  // where the icon is anchored on the map
   popupAnchor:  [0, -28]
 });
 var greenIcon = L.icon({
@@ -54,7 +54,7 @@ var greenIcon = L.icon({
   shadowUrl: '',
 
   iconSize:     [28, 34],  // size of the icon
-  iconAnchor:   [12, 30],
+  iconAnchor:   [12, 30],  // where the icon is anchored on the map
   popupAnchor:  [0, -28]
 });
 var yellowIcon = L.icon({
@@ -62,7 +62,7 @@ var yellowIcon = L.icon({
   shadowUrl: '',
 
   iconSize:     [28, 34],  // size of the icon
-  iconAnchor:   [12, 30],
+  iconAnchor:   [12, 30],  // where the icon is anchored on the map
   popupAnchor:  [0, -28]
 });
 var pinkIcon = L.icon({
@@ -70,7 +70,7 @@ var pinkIcon = L.icon({
   shadowUrl: '',
 
   iconSize:     [28, 34],  // size of the icon
-  iconAnchor:   [12, 30],
+  iconAnchor:   [12, 30],  // where the icon is anchored on the map
   popupAnchor:  [0, -28]
 });
 var greyIcon = L.icon({
@@ -78,7 +78,7 @@ var greyIcon = L.icon({
   shadowUrl: '',
 
   iconSize:     [28, 34],  // size of the icon
-  iconAnchor:   [12, 30],
+  iconAnchor:   [12, 30],  // where the icon is anchored on the map
   popupAnchor:  [0, -28]
 });
 var blackIcon = L.icon({
@@ -86,7 +86,7 @@ var blackIcon = L.icon({
   shadowUrl: '',
 
   iconSize:     [28, 34],  // size of the icon
-  iconAnchor:   [12, 30],
+  iconAnchor:   [12, 30],  // where the icon is anchored on the map
   popupAnchor:  [0, -28]
 });
 
@@ -106,6 +106,17 @@ var blackIcon = L.icon({
 
 
 var latitude4;
+
+// NOTE: button variables
+var button1 = document.getElementById('button1');
+var button2 = document.getElementById('button2');
+var button3 = document.getElementById('button3');
+var button4 = document.getElementById('button4');
+var button5 = document.getElementById('button5');
+var button6 = document.getElementById('button6');
+var button7 = document.getElementById('button7');
+var button8 = document.getElementById('button8');
+var button9 = document.getElementById('button9');
 
 // NOTE: get JSON and interval seco
 window.setInterval(function(){
@@ -174,25 +185,64 @@ window.setInterval(function(){
 
      marker.setLatLng([latitude,longitude]);
      marker.bindPopup('This is bus '+vehicleId);
+     document.getElementById('button1').innerHTML = 'Bus '+vehicleId;
      marker1.setLatLng([latitude1,longitude1]);
      marker1.bindPopup('This is bus '+vehicleId1);
+     document.getElementById('button2').innerHTML = 'Bus '+vehicleId1;
      marker2.setLatLng([latitude2,longitude2]);
      marker2.bindPopup('This is bus '+vehicleId2);
+     document.getElementById('button3').innerHTML = 'Bus '+vehicleId2;
      marker3.setLatLng([latitude3,longitude3]);
      marker3.bindPopup('This is bus '+vehicleId3);
+     document.getElementById('button4').innerHTML = 'Bus '+vehicleId3;
      marker4.setLatLng([latitude4,longitude4]);
      marker4.bindPopup('This is bus '+vehicleId4);
+     document.getElementById('button5').innerHTML = 'Bus '+vehicleId4;
      marker5.setLatLng([latitude5,longitude5]);
      marker5.bindPopup('This is bus '+vehicleId5);
+     document.getElementById('button6').innerHTML = 'Bus '+vehicleId5;
      marker6.setLatLng([latitude6,longitude6]);
      marker6.bindPopup('This is bus '+vehicleId6);
+     document.getElementById('button7').innerHTML = 'Bus '+vehicleId6;
      marker7.setLatLng([latitude7,longitude7]);
      marker7.bindPopup('This is bus '+vehicleId7);
+     document.getElementById('button8').innerHTML = 'Bus '+vehicleId7;
      marker8.setLatLng([latitude8,longitude8]);
      marker8.bindPopup('This is bus '+vehicleId8);
+     document.getElementById('button9').innerHTML = 'Bus '+vehicleId8;
 
   }
 }, 3000);
+
+// NOTE: event listeners for button clicks to popup bus location
+button1.addEventListener('click', function(){
+  marker.openPopup();
+});
+button2.addEventListener('click', function(){
+  marker1.openPopup();
+});
+button3.addEventListener('click', function(){
+  marker2.openPopup();
+})
+button4.addEventListener('click', function(){
+  marker3.openPopup();
+});
+button5.addEventListener('click', function(){
+  marker4.openPopup();
+});
+button6.addEventListener('click', function(){
+  marker5.openPopup();
+});
+button7.addEventListener('click', function(){
+  marker6.openPopup();
+});
+button8.addEventListener('click', function(){
+  marker7.openPopup();
+});
+button9.addEventListener('click', function(){
+  marker8.openPopup();
+});
+
 
 
 

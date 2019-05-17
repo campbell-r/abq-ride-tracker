@@ -4,5 +4,43 @@
 
 }
 body{
-  background-color: grey;
+  background-color: white;
+  color: black;
+}
+#button1{
+  color: white;
+  background-color: orange;/* NOTE: will replace with the correct color code */
+}
+#button2{
+  color: white;
+  background-color: red;/* NOTE: will replace with the correct color code */
+}
+#button3{
+  color: white;
+  background-color: blue;/* NOTE: will replace with the correct color code */
+}
+#button4{
+  color:white;
+  background-color: purple; /* NOTE: will replace with the correct color code */
+}
+#button5{
+  color: white;
+  background-color: green; /* NOTE: will replace with the correct color code */
+
+}
+#button6{
+  color: grey;
+  background-color: yellow;/* NOTE: will replace with the correct color code */
+}
+#button7{
+  color: grey;
+  background-color: pink;/* NOTE: will replace with the correct color code */
+}
+#button8{
+  color: black;
+  background-color: grey;/* NOTE: will replace with the correct color code */
+}
+#button9{
+  color: white;
+  background-color: black;/* NOTE: will replace with the correct color code */
 }
