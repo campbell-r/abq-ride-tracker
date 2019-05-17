@@ -135,38 +135,48 @@ window.setInterval(function(){
     latitude = data.allroutes[0].latitude;
     longitude = data.allroutes[0].longitude;
     vehicleId = data.allroutes[0].vehicle_id;
+    nextStop = data.allroutes[0].next_stop_name;
     // NOTE: start of vehicle1
     latitude1 = data.allroutes[1].latitude;
     longitude1 = data.allroutes[1].longitude;
     vehicleId1 = data.allroutes[1].vehicle_id;
+    nextStop1 = data.allroutes[1].next_stop_name;
     // NOTE: start of vehicle2
     latitude2 = data.allroutes[2].latitude;
     longitude2 = data.allroutes[2].longitude;
     vehicleId2 = data.allroutes[2].vehicle_id;
+    nextStop2 = data.allroutes[2].next_stop_name;
+
     // NOTE: start of vehicle3
     latitude3 = data.allroutes[3].latitude;
     longitude3 = data.allroutes[3].longitude;
     vehicleId3 = data.allroutes[3].vehicle_id;
+    nextStop3 = data.allroutes[3].next_stop_name;
     // NOTE: start of vehicle4
     latitude4 = data.allroutes[4].latitude;
     longitude4 = data.allroutes[4].longitude;
     vehicleId4 = data.allroutes[4].vehicle_id;
+    nextStop4 = data.allroutes[4].next_stop_name;
     // NOTE: start of vehicle5
     latitude5 = data.allroutes[5].latitude;
     longitude5 = data.allroutes[5].longitude;
     vehicleId5 = data.allroutes[5].vehicle_id;
+    nextStop5 = data.allroutes[5].next_stop_name;
     // NOTE: start of vehicle6
     latitude6 = data.allroutes[6].latitude;
     longitude6 = data.allroutes[6].longitude;
     vehicleId6 = data.allroutes[6].vehicle_id;
+    nextStop6 = data.allroutes[6].next_stop_name;
     // NOTE: start of vehicle7
     latitude7 = data.allroutes[7].latitude;
     longitude7 = data.allroutes[7].longitude;
     vehicleId7 = data.allroutes[7].vehicle_id;
+    nextStop7 = data.allroutes[7].next_stop_name;
     // NOTE: start of vehicle8
     latitude8 = data.allroutes[8].latitude;
     longitude8 = data.allroutes[8].longitude;
     vehicleId8 = data.allroutes[8].vehicle_id;
+    nextStop8 = data.allroutes[8].next_stop_name;
     // NOTE: setting up the arguments for the autoPopulate function
     autoPopulate('field', 'id');
   });
@@ -182,33 +192,33 @@ window.setInterval(function(){
     console.log('Bus '+vehicleId7+' is located at ' + latitude7+' '+longitude7);
     console.log('Bus '+vehicleId8+' is located at ' + latitude8+' '+longitude8);
 
-
+    
      marker.setLatLng([latitude,longitude]);
-     marker.bindPopup('This is bus '+vehicleId);
+     marker.bindPopup('This is bus '+vehicleId+'. Next stop is '+nextStop+'.');
      document.getElementById('button1').innerHTML = 'Bus '+vehicleId;
      marker1.setLatLng([latitude1,longitude1]);
-     marker1.bindPopup('This is bus '+vehicleId1);
+     marker1.bindPopup('This is bus '+vehicleId1+'. Next stop is '+nextStop1+'.');
      document.getElementById('button2').innerHTML = 'Bus '+vehicleId1;
      marker2.setLatLng([latitude2,longitude2]);
-     marker2.bindPopup('This is bus '+vehicleId2);
+     marker2.bindPopup('This is bus '+vehicleId2+'. Next stop is '+nextStop2+'.');
      document.getElementById('button3').innerHTML = 'Bus '+vehicleId2;
      marker3.setLatLng([latitude3,longitude3]);
-     marker3.bindPopup('This is bus '+vehicleId3);
+     marker3.bindPopup('This is bus '+vehicleId3+'. Next stop is'+ nextStop3+'.');
      document.getElementById('button4').innerHTML = 'Bus '+vehicleId3;
      marker4.setLatLng([latitude4,longitude4]);
-     marker4.bindPopup('This is bus '+vehicleId4);
+     marker4.bindPopup('This is bus '+vehicleId4+'. Next stop is '+nextStop4+'.');
      document.getElementById('button5').innerHTML = 'Bus '+vehicleId4;
      marker5.setLatLng([latitude5,longitude5]);
-     marker5.bindPopup('This is bus '+vehicleId5);
+     marker5.bindPopup('This is bus '+vehicleId5+'. Next stop is '+nextStop5+'.');
      document.getElementById('button6').innerHTML = 'Bus '+vehicleId5;
      marker6.setLatLng([latitude6,longitude6]);
-     marker6.bindPopup('This is bus '+vehicleId6);
+     marker6.bindPopup('This is bus '+vehicleId6+'. Next stop is '+nextStop6+'.');
      document.getElementById('button7').innerHTML = 'Bus '+vehicleId6;
      marker7.setLatLng([latitude7,longitude7]);
-     marker7.bindPopup('This is bus '+vehicleId7);
+     marker7.bindPopup('This is bus '+vehicleId7+'. Next stop is '+nextStop7+'.');
      document.getElementById('button8').innerHTML = 'Bus '+vehicleId7;
      marker8.setLatLng([latitude8,longitude8]);
-     marker8.bindPopup('This is bus '+vehicleId8);
+     marker8.bindPopup('This is bus '+vehicleId8+'. Next stop is '+nextStop8+'.');
      document.getElementById('button9').innerHTML = 'Bus '+vehicleId8;
 
   }
