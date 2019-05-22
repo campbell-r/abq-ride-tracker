@@ -1,10 +1,14 @@
+#navigation{
+  background-color: #313848;
+}
 #mapid {
   height: 800px;
-  border: 1px solid black;
-
+}
+.nav-text{
+  color: white;
 }
 body{
-  background-color: white;
+  background-color: #white;
   color: black;
 }
 #button1{
@@ -43,4 +47,18 @@ body{
 #button9{
   color: white;
   background-color: black;/* NOTE: will replace with the correct color code */
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
 }

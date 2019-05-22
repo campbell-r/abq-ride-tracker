@@ -7,35 +7,44 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
   crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
     <!-- <link rel="stylesheet" href="leaflet/leaflet.css" />
   <script type="text/javascript" src="leaflet/leaflet.js"></script> -->
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   </head>
   <body>
+
     <div class="container-fluid">
-      <div class="Row">
-        <div class="col-sm-12" id="head-information">
-          <h1 class="text-center">ABQ Ride Tracker</h1>
-          <button type="button" name="" class="btn btn-light" id="button1">Bus</button>
-          <button type="button" name="button" class="btn btn-light" id="button2">Bus</button>
-          <button type="button" name="button" class="btn btn-light" id="button3">Bus</button>
-          <button type="button" name="button" class="btn btn-light" id="button4">Bus</button>
-          <button type="button" name="button" class="btn btn-light" id="button5">Bus</button>
-          <button type="button" name="button" class="btn btn-light" id="button6">Bus</button>
-          <button type="button" name="button" class="btn btn-light" id="button7">Bus</button>
-          <button type="button" name="button" class="btn btn-light" id="button8">Bus</button>
-          <button type="button" name="button" class="btn btn-light" id="button9">Bus</button>
-        </div><!-- NOTE: col-sm-12 -->
-      </div><!-- NOTE:end of row  -->
-    </div><!-- NOTE: end of container fluid -->
-     <div id="mapid"></div>
+      <div class="row">
+        <div class="col-sm-3" id="navigation">
+          <h1 class="nav-text">ABQ RIDE TRACKER</h1>
+          <p class="nav-text">Click on which bus route you would like to display</p>
+          <button type="button" name="" class="btn btn-dark" id="button1">Route 66 Central</button>
+          <button type="button" name="button" class="btn btn-dark" id="button2">Route 11 Lomas</button>
+          <button type="button" name="button" class="btn btn-dark" id="button3">Route 8 Menaul</button>
+          <button type="button" name="button" class="btn btn-dark" id="button4">Route 1 Juan Tabo</button>
+          <button type="button" name="button" class="btn btn-dark" id="button5">Route 31 Wyoming</button>
+          <button type="button" name="button" class="btn btn-dark" id="button6">Bus</button>
+          <button type="button" name="button" class="btn btn-dark" id="button7">Bus</button>
+          <button type="button" name="button" class="btn btn-dark" id="button8">Bus</button>
+          <button type="button" name="button" class="btn btn-dark" id="button9">Clear All Routes</button>
+        </div><!-- NOTE: end of col sm 3 -->
+        <div class="col-sm-9" id="mapid">
+
+        </div><!-- NOTE: end col-sm-9 -->
+
+      </div><!-- NOTE: end of row -->
+
+    </div><!-- NOTE: container fluid -->
+
 
 
      <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
        crossorigin=""></script>
-       <script type="text/javascript" src="main.js"></script>
+
+       <script type="text/javascript" src="main0.js"></script>
 
   </body>
 </html>
