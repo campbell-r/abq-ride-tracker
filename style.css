@@ -1,5 +1,6 @@
-#navigation{
-  background-color: #313848;
+#navigation-header{
+  /* background-color: #313848; */
+  font-size: 30px;
 }
 #mapid {
   height: 800px;
@@ -11,24 +12,27 @@ body{
   background-color: #white;
   color: black;
 }
+
 #button1{
-  color: white;
+  /* color: white;
   background-color: orange;/* NOTE: will replace with the correct color code */
+
+
 }
 #button2{
-  color: white;
-  background-color: red;/* NOTE: will replace with the correct color code */
+  /* color: white;
+  background-color: red;/* NOTE: will replace with the correct color code */ */
 }
 #button3{
-  color: white;
-  background-color: blue;/* NOTE: will replace with the correct color code */
+  /* color: white;
+  background-color: blue;/* NOTE: will replace with the correct color code */ */
 }
 #button4{
   color:white;
   background-color: purple; /* NOTE: will replace with the correct color code */
 }
 #button5{
-  color: white;
+  /* color: white;
   background-color: green; /* NOTE: will replace with the correct color code */
 
 }
