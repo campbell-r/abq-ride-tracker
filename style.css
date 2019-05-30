@@ -1,3 +1,10 @@
+#navigation{
+  overflow-y: scroll;
+  height: 400px;
+}
+.checkBox{
+  color:white;
+}
 #navigation-header{
   /* background-color: #313848; */
   font-size: 30px;
@@ -65,4 +72,18 @@ body{
     background: #7386D5;
     color: #fff;
     transition: all 0.3s;
+}
+.leaflet-popup-content-wrapper {
+  background-color: #313848;
+  color:white;
+
+}
+
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+
+
+}
+
+.leaflet-popup-tip-container {
+  color:grey;
 }
