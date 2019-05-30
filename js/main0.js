@@ -159,7 +159,7 @@ function addRoute66(){
     route66Arrows[i] = L.marker([data.vehicles[i].latitude, data.vehicles[i].longitude], {
        icon: upArrow
        });
-    route66Arrows[i] = setRotationAngle(data.vehicles[i].heading)
+
 }
 // marker1 = L.marker([35.084877299999995,
 //                -106.6468263], {

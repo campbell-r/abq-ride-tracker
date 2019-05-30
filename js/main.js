@@ -164,7 +164,7 @@ function getRoute1(){
        marker1 = L.marker([cords[i][1],cords[i][0]]);
        route1.push(marker1.getLatLng());
        var polyline = L.polyline(route1,{color: 'orange'}).addTo(mymap);
-       
+
       }
   });
 }
