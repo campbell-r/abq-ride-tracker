@@ -1,13 +1,13 @@
-#navigation{
-  overflow-y: scroll;
-  height: 400px;
-}
+
 .checkBox{
   color:white;
 }
 #navigation-header{
   /* background-color: #313848; */
   font-size: 30px;
+}
+#alert{
+  margin-top:200px;
 }
 #mapid {
   height: 800px;

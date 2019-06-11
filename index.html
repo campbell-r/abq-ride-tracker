@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <title>Abq RIDE Tracker</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<!-- <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
   crossorigin=""/>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/Leaflet.Dialog.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   </head>
@@ -34,40 +33,41 @@
         <div class="col-md-3 bg-primary" id="navigation">
 
           <!-- <h4 class="nav-text my-3">Which bus route would you like to track?</h4> -->
-          <p class="nav-text my-3">Click on which bus route you would like to display</p>
+          <h5 class="nav-text my-3">Click on which bus route you would like to display</h5>
           <div class="form-check my-3 checkBox">
               <label class="form-check-label">
                 <input name="CheckBox66" class="form-check-input" type="checkbox" value="" id="route66CheckBox">
-              Route 66 Central
+              <p>Route 66 Central<p>
               </label>
             </div>
             <div class="form-check my-3 checkBox">
                 <label class="form-check-label" id="route66CheckBox">
-                  <input name="checkBox11" class="form-check-input" type="checkbox" value="" id="route11CheckBox">
-                Route 11 Lomas
+                  <input name="checkBox11" class="form-check-input" type="checkbox" value="" id="route11CheckBox"><p>
+                Route 11 Lomas</p>
                 </label>
               </div>
               <div class="form-check my-3">
                   <label class="form-check-label checkBox" id="route66CheckBox">
-                    <input name="checkBox8" class="form-check-input" type="checkbox" value="" id="route8CheckBox">
-                  Route 8 Menaul
+                    <input name="checkBox8" class="form-check-input" type="checkbox" value="" id="route8CheckBox"><p>
+                  Route 8 Menaul<p>
                   </label>
                 </div>
                 <div class="form-check my-3 checkBox">
                     <label class="form-check-label">
-                      <input name="checkBox1" class="form-check-input" type="checkbox" value="" id="route1CheckBox">
-                    Route 1 Juan Tabo
+                      <input name="checkBox1" class="form-check-input" type="checkbox" value="" id="route1CheckBox"><p>
+                    Route 1 Juan Tabo</p>
                     </label>
                   </div>
                   <div class="form-check my-3 checkBox">
                       <label class="form-check-label">
-                        <input name="checkBox31" class="form-check-input" type="checkbox" value="" id="route31CheckBox">
-                      Route 31 Wyoming
+                        <input name="checkBox31" class="form-check-input" type="checkbox" value="" id="route31CheckBox"><p>
+                      Route 31 Wyoming<p>
                       </label>
                     </div>
-          <button type="button" name="button" class="btn btn-primary btn-md btn-block" id="button9">Clear All Routes</button>
+          <button type="button" name="button" class="btn btn-primary btn-md btn-block my-3" id="button9">Clear All Routes</button>
         </div><!-- NOTE: end of col sm 3 -->
         <div class="col-md-9" id="mapid">
+
         </div><!-- NOTE: end col-sm-9 -->
       </div><!-- NOTE: end of row -->
     </div><!-- NOTE: container fluid -->
@@ -78,9 +78,9 @@
      <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
        crossorigin=""></script>
-  <script type="text/javascript" src="js/leaflet.rotatedMarker.js">
+  <script type="text/javascript" src="js/Leaflet.Dialog.js"></script>
+  <script type="text/javascript" src="js/leaflet.rotatedMarker.js"></script>
 
-  </script>
        <script type="text/javascript" src="js/main0.js"></script>
 
   </body>

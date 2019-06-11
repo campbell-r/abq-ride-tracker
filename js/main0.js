@@ -99,6 +99,11 @@ var blackIcon = L.icon({
   popupAnchor:  [0, -28]
 });
 
+var dialog = L.control.dialog({size:[300, 125],anchor:[0, 100]})
+
+
+// dialog.showResize();
+
 
 // NOTE: button variables
 var button9 = document.getElementById('button9');
@@ -161,14 +166,6 @@ function addRoute66(){
        });
 
 }
-// marker1 = L.marker([35.084877299999995,
-//                -106.6468263], {
-//                  icon:orangeIcon
-//                }).addTo(mymap);
-//                 window.setInterval(function(){
-//                 marker1.setRotationAngle(70);
-//                       }, 1000);
-
 });
 }
 
@@ -198,8 +195,7 @@ function route66(){
 
       route66Arrows[i].setLatLng([data.vehicles[i].latitude, data.vehicles[i].longitude]);
 
-
-
+      dialog.setContent('<h1>Route 66 </h1>'+'<h5>('+data.vehicles.length+' Active Busses)</h5>');
       route66Busses[i].setLatLng([data.vehicles[i].latitude, data.vehicles[i].longitude]);
       route66Busses[i].bindPopup('<p><b>Bus: </b> #'+data.vehicles[i].vehicle_id+'. <br><b>Next stop: </b>'+data.vehicles[i].next_stop_name[0]);
       // '<br><b>Time Until Next Stop:</b> '+(nextStopHour-hour)+' Hours and '+(nextStopMinutes[i]-minutes)+' Minutes</p>'
@@ -455,7 +451,7 @@ drawRoute31();
 
 checkBox66.addEventListener('change', function(){
   if(this.checked){
-
+    dialog.addTo(mymap);
 
     for(i=0;i<route66Busses.length;i++){
          mymap.addLayer(route66Busses[i]);
@@ -471,6 +467,7 @@ checkBox66.addEventListener('change', function(){
           route66();
         }, 1000);
   }else{
+    dialog.destroy();
     for(i=0;i<route66Busses.length;i++){
          mymap.removeLayer(route66Busses[i]);
        }

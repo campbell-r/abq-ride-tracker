@@ -9,6 +9,15 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     accessToken: 'pk.eyJ1IjoiY2FtcGJlbGxyIiwiYSI6ImNqdmlwNXYyejA4Y2c0OG9qYnAyanlxdncifQ.t6djm2dI83fR6xpD4G1lhQ'
 }).addTo(mymap);
   // iconUrl: 'https://gkv.com/wp-content/uploads/leaflet-maps-marker-icons/map_marker-orange-small.png',
+
+//
+// var dialog = L.control.dialog({
+//   size: [300, 300],
+//   anchor: [250, 250]
+// })
+//   .setContent("<p>Hello! Welcome to your nice new dialog box!</p>")
+//   .addTo(mymap);
+// dialog.open();
 // NOTE: adding custom icon markers here
 var orangeIcon = L.icon({
     iconUrl: 'icons/bus.png',
@@ -144,6 +153,7 @@ function bus(id, lat, long, stop) {
 }
 
 
+
 // NOTE: start of route 66 markers and tracking
 bus66Angle = [];
 function addRoute66(){
@@ -159,15 +169,8 @@ function addRoute66(){
     route66Arrows[i] = L.marker([data.vehicles[i].latitude, data.vehicles[i].longitude], {
        icon: upArrow
        });
-    route66Arrows[i] = setRotationAngle(data.vehicles[i].heading)
+    route66Arrows[i].setRotationAngle(data.vehicles[i].heading);
 }
-// marker1 = L.marker([35.084877299999995,
-//                -106.6468263], {
-//                  icon:orangeIcon
-//                }).addTo(mymap);
-//                 window.setInterval(function(){
-//                 marker1.setRotationAngle(70);
-//                       }, 1000);
 
 });
 }
